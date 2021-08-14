@@ -4,16 +4,16 @@ import App from '../App';
 import CommentBox from '../CommentBox';
 import CommentList from '../CommentList';
 
-let component; // для видимости!
+let component;
 
 beforeEach(() => {
   component = shallow(<App />);
 });
 
-it('shows a comment box', () => {
+it('выводит компонент добавления', () => {
   expect(component.find(CommentBox).length).toEqual(1);
 });
 
-it('shows a comment list', () => {
+it('выводит список комментариев', () => {
   expect(component.find(CommentList).length).toEqual(1);
 });

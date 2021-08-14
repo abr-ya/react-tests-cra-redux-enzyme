@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
-/* eslint-disable require-jsdoc */
 class CommentList extends Component {
   renderComments() {
-    // eslint-disable-next-line react/prop-types
     return this.props.comments.map((comment) => (
       <li key={comment}>{comment}</li>
     ));

@@ -7,7 +7,6 @@ const CommentBox = ({saveComment, fetchComments}) => {
 
   const formHandler = (e) => {
     e.preventDefault();
-    // console.log('send', comment);
     saveComment(comment);
     setComment('');
   };
@@ -15,7 +14,7 @@ const CommentBox = ({saveComment, fetchComments}) => {
   return (
     <div>
       <form onSubmit={formHandler}>
-        <h4>Add a Comment</h4>
+        <h4>Добавить комментарий</h4>
         <textarea
           value={comment}
           onChange={(e) => {
@@ -23,11 +22,11 @@ const CommentBox = ({saveComment, fetchComments}) => {
           }}
         />
         <div>
-          <button>Submit Comment</button>
+          <button>Отправить комментарий</button>
         </div>
       </form>
       <button className='fetch-comments' onClick={fetchComments}>
-        Fetch Comments
+        Загрузить комментарии
       </button>
     </div>
   );

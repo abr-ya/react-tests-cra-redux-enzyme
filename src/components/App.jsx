@@ -4,7 +4,7 @@ import CommentList from './CommentList';
 
 const App = () => (
   <div className="App">
-    <p>Hello, World!)</p>
+    <h1>Приложение для тестов</h1>
     <CommentBox />
     <CommentList />
   </div>
